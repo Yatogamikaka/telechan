@@ -24,7 +24,8 @@ function botUtils() {
 // 		return ctx.reply("This is a test bot.");
 // 	});
 
-	bot.command("about", about()).command("sendkey", sendkey()).on("text", greeting());
+// 	bot.command("about", about()).command("sendkey", sendkey()).on("text", greeting()); 取消了sendkey command 自己加盐tiimmi哈希计算sendkey
+	bot.command("about", about()).on("text", greeting());
 }
 
 async function localBot() {
